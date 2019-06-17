@@ -1,7 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Raleway&display=swap');
 
 .Lobster {
   font-family: 'Lobster', cursive;
+}
+
+.Raleway {
+  font-family: 'Raleway', sans-serif;
 }
 
 body {
@@ -12,19 +16,26 @@ body {
   height: 100%;
   width: 0;
   position: fixed;
+  background-image: url('../img/night.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
   z-index: 1;
   top: 0;
   left: 0;
-  background-image: linear-gradient(to left bottom, #7b24eb, #ab22da, #ca2fca, #df44bd, #ed5bb3);
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 10px;
+  padding-top: 0px;
+}
+
+.sidenav-color {
+  background-image: linear-gradient(to left bottom, #7b24ebba, #ab22dab5, #ca2fcac7, #df44bdc7, #ed5bb3c2);
+  height: 100%;
 }
 
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 16px;
   color: #ffffff;
   display: block;
   transition: 0.3s;
@@ -33,18 +44,19 @@ body {
 
 .sidenav a:hover {
   color: #f1f1f1;
+  background-color: #ffffff30;
 }
 
 .sidenav .closebtn {
   position: absolute;
-  top: 20px;
+  top: 10px;
   right: 20px;
   font-size: 25px;
   margin-left: 50px;
 }
 
 #main {
-  transition: margin-left .5s;
+  transition: margin-left 0.5s;
   padding: 16px;
 }
 
@@ -64,12 +76,14 @@ body {
 }
 
 .nav-logo img {
+  padding-top: 5px;
   width: 50px;
   height: 50px;
 }
 
 .nav-logo span {
   position: absolute;
+  font-size: 25px;
   top: 15px;
   left: 45%;
   color: #ffffff;
@@ -80,4 +94,35 @@ body {
   border: 0px;
   height: 1px;
   background-color: white;
+}
+.nav-search {
+  position: relative;
+}
+.nav-search input{
+  color: white;
+  background-color: transparent;
+  border:0px;
+  border-bottom: 1px solid #fff;
+  width: 85%;
+}
+.nav-search input::placeholder{
+  color: white;
+}
+
+.nav-search i{
+  transform: scaleX(-1);
+  position: absolute;
+  top: 15px; 
+  right: 40px;
+}
+.submenu-ul {
+  list-style: none;
+}
+.submenu-ul li {
+  padding: 0px;
+}
+.copyright {
+  position: absolute;
+  bottom: 3px;
+  left: 10%;
 }
