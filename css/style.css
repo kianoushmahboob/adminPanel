@@ -57,7 +57,7 @@ body {
 
 #main {
   transition: margin-left 0.5s;
-  padding: 16px;
+  /*padding: 16px;*/
 }
 
 @media screen and (max-height: 450px) {
@@ -125,4 +125,18 @@ body {
   position: absolute;
   bottom: 3px;
   left: 10%;
+}
+
+.bg-color {
+     background-image: linear-gradient(to right , #7b24ebba, #ab22dab5, #ca2fcac7, #df44bdc7, #ed5bb3c2);
+}
+.bg-img-nav {
+  background-image: url('../img/night.jpg');
+      background-repeat: no-repeat;
+    background-position: right;
+}
+.barOpen {
+  color: white;
+  font-size:22px;
+  cursor:pointer
 }
