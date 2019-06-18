@@ -7,6 +7,9 @@
 .Raleway {
   font-family: 'Raleway', sans-serif;
 }
+.rtl {
+  direction: rtl;
+}
 
 body {
   font-family: "Lato", sans-serif;
@@ -127,9 +130,11 @@ body {
   left: 10%;
 }
 
-.bg-color {
+.bg-color-1 {
      background-image: linear-gradient(to right , #7b24ebba, #ab22dab5, #ca2fcac7, #df44bdc7, #ed5bb3c2);
+     padding: 13px;
 }
+
 .bg-img-nav {
   background-image: url('../img/night.jpg');
       background-repeat: no-repeat;
@@ -139,4 +144,52 @@ body {
   color: white;
   font-size:22px;
   cursor:pointer
+}
+.profile-img {
+  width: 28px ;
+  border-radius: 50%;
+}
+.settings-color {
+  position: relative;
+  overflow: hidden;
+
+}
+.settings-color-p {
+  margin-top: 15px;
+  width: 150px;
+  background:#d4d4d4;
+  padding: 5px 10px 5px 10px;
+  margin-right: -110px;
+
+  transition: margin-right 800ms;
+}
+.settings-color-p i {
+ /* padding: 5px;*/
+}
+.settings-color-p:hover {
+  margin-right: 0px;
+}
+.color-1 {
+  content: " ";
+  background-image: linear-gradient(to right , #7b24ebba, #ab22dab5, #ca2fcac7, #df44bdc7, #ed5bb3c2);
+  width: 15px;
+  border-radius: 50%;
+}
+.color-2{
+  content: " ";
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  width: 15px;
+  border-radius: 50%;
+}
+.color-3{
+  content: " ";
+  background-image: linear-gradient(to right top, #eb992f, #ec821c, #ec680e, #ec490b, #eb1212);
+  width: 15px;
+  border-radius: 50%;
+}
+.color-4{
+  content: " ";
+  background-image: linear-gradient(to right top, #2f3feb, #0077ff, #0093e3, #00a6b0, #28b389);
+  width: 15px;
+  border-radius: 50%;
 }
