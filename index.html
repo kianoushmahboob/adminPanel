@@ -3,11 +3,13 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chartist.min.css">
     <link rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
   </head>
   <body>
 
@@ -18,90 +20,178 @@
           <span class="Lobster">Panda</span>
         </a>
         <hr class="nav-hr">
-                <a href="#" class="Raleway nav-search"> <input type="text" placeholder="search"> <i class="fas fa-search"></i></a>
+        <a href="#" class="Raleway nav-search"> <input type="text"
+            placeholder="search"> <i class="fas fa-search"></i></a>
         <a href="#" class="Raleway mt-2"><i class="fas fa-tachometer-alt pr-3"></i>
           <span> Dashboard</span> </a>
         <a href="#" class="Raleway"><i class="fas fa-list-ul pr-3"></i> <span>
             App</span></a>
-        <a href="#dr1" class="Raleway" data-toggle="collapse"><i class="far fa-file-alt pr-3"></i> <span>
-          
-            Page<i class="fas fa-caret-down pl-2"></i></span></a><ul class="collapse submenu-ul" id="dr1">
-            <li ><a href=""> page 1</a></li>
-            <li><a href=""> page 2 </a></li>
-            <li><a href=""> page 3</a></li>
-          </ul>
+        <a href="#dr1" class="Raleway" data-toggle="collapse"><i class="far
+            fa-file-alt pr-3"></i> <span>
+
+            Page<i class="fas fa-caret-down pl-2"></i></span></a><ul
+          class="collapse submenu-ul" id="dr1">
+          <li><a href=""> page 1</a></li>
+          <li><a href=""> page 2 </a></li>
+          <li><a href=""> page 3</a></li>
+        </ul>
         <a href="#" class="Raleway"><i class="fab fa-buffer pr-3"></i> <span>
             layout</span></a>
         <a href="#" class="Raleway"><i class="fas fa-table pr-3"></i> <span>
             Table</span></a>
         <a href="#" class="Raleway"><i class="fas fa-cogs pr-3"></i> <span>
-            Settings</span><span class="badge badge-pill badge-info float-right mr-4 mt-2">2</span></a>
-                    <a href="#" class="Raleway"><i class="fab fa-wpforms pr-3"></i><span>
+            Settings</span><span class="badge badge-pill badge-info float-right
+            mr-4 mt-2">2</span></a>
+        <a href="#" class="Raleway"><i class="fab fa-wpforms pr-3"></i><span>
             Form</span></a>
-                    <a href="#" class="Raleway"><i class="fas fa-chart-pie pr-3"></i> <span>
+        <a href="#" class="Raleway"><i class="fas fa-chart-pie pr-3"></i> <span>
             Chart</span></a>
 
-            <a href="#" class="copyright">
+        <a href="#" class="copyright">
 
-            copyright @ 2019 </a>
+          copyright @ 2019 </a>
       </div>
     </div>
 
 
     <div id="main">
       <div class="bg-img-nav">
-      <nav class="navbar navbar-expand-lg navbar-light bg-color-1">
-   <span class="barOpen" style="" onclick="openNav()">&#9776;
-        </span>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+        <nav class="navbar navbar-expand-lg navbar-light bg-color-1">
+          <span class="barOpen" style="" onclick="openNav()">&#9776;
+          </span>
+          <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown rtl">
-        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <img src="img/personal.jpg" class="profile-img">
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown rtl">
+                <a class="nav-link dropdown-toggle text-white" href="#"
+                  id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <img src="img/personal.jpg" class="profile-img">
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link text-white" href="#"><i class="fas fa-bell"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#"><i class="fas fa-cog"></i></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#"><i class="fas
+                    fa-envelope"></i></a>
+              </li>
+            </ul>
+
+          </div>
+        </nav>
+      </div>
+      <div class="settings-color float-right">
+
+        <div class="settings-color-p row">
+          <i class="fas fa-cog ml-auto"></i>
+          <div class="color-1 ml-auto"></div>
+          <div class="color-2 ml-auto"></div>
+          <div class="color-3 ml-auto"></div>
+          <div class="color-4 ml-auto"></div>
+
         </div>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link text-white" href="#"><i class="fas fa-bell"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-white" href="#"><i class="fas fa-cog"></i></a>
-      </li>
+      </div>
+      <br>
+      <div class="container-fluid">
+        <div class="row mt-2">
+          <div class="col-md-8 max-h">
 
-      <li class="nav-item">
-        <a class="nav-link text-white" href="#"><i class="fas fa-envelope"></i></a>
-      </li>
-    </ul>
+            <div class="ct-chart ct-perfect-fourth"></div>
+          </div>
+          <div class="col-md-4">
+            <div class="ct-chart ct-chart-2 ct-perfect-fourth"></div>
+          </div>
+        </div>
 
-  </div>
-</nav>
-</div>
-  <div class="settings-color float-right">
+        <div class="row pl-5 pr-3">
+          <div class="col-md-3 pr-0">
+            <div class="col-12 bg-color-statusbar-1 row box-shadow">
+              <div class="col-6">
+                <img src="img/database.png" alt="">
+              </div>
+              <div class="col-6">
+                <p class="text-white padTop-25px text-center Raleway">lorem
+                  ipsum</p>
+                <p class="text-white text-center Lobster h4 txt-shadow">256</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 pr-0">
+            <div class="col-12 bg-color-statusbar-2 row box-shadow">
+              <div class="col-6">
+                <img src="img/picture.png" alt="">
+              </div>
+              <div class="col-6">
+                <p class="text-white padTop-25px text-center Raleway">lorem
+                  ipsum</p>
+                <p class="text-white text-center Lobster h4 txt-shadow">256</p>
+              </div>
+            </div>
+          </div><div class="col-md-3 pr-0">
+            <div class="col-12 bg-color-statusbar-3 row box-shadow">
+              <div class="col-6">
+                <img src="img/video-player.png" alt="">
+              </div>
+              <div class="col-6">
+                <p class="text-white padTop-25px text-center Raleway">lorem
+                  ipsum</p>
+                <p class="text-white text-center Lobster h4 txt-shadow">256</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 pr-0">
+            <div class="col-12 bg-color-statusbar-4 row box-shadow">
+              <div class="col-6">
+                <img src="img/megaphone.png" alt="">
+              </div>
+              <div class="col-6">
+                <p class="text-white padTop-25px text-center Raleway">lorem
+                  ipsum</p>
+                <p class="text-white text-center Lobster h4 txt-shadow">256</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-12">
+              <div class="ct-chart ct-chart-3 ct-perfect-fourth"></div>
 
-    <div class="settings-color-p row">
-      <i class="fas fa-cog ml-auto"></i>
-      <div class="color-1 ml-auto"></div>
-      <div class="color-2 ml-auto"></div>
-      <div class="color-3 ml-auto"></div>
-      <div class="color-4 ml-auto"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
 
-    </div>
-  </div>
-     
+        </div>
+        <div class="col-md-4">
+
+        </div>
+      </div>
     </div>
 
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/app.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/chartist.min.js"></script>
+    <script src="js/app.js"></script>
 
   </body>
 </html>
