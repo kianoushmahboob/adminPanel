@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster|Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barlow:600i&display=swap');
 
 .Lobster {
   font-family: 'Lobster', cursive;
@@ -7,6 +8,11 @@
 .Raleway {
   font-family: 'Raleway', sans-serif;
 }
+
+.Barlow {
+  font-family: 'Barlow', sans-serif;
+}
+
 
 .rtl {
   direction: rtl;
@@ -280,4 +286,108 @@ body {
 
 .box-shadow {
   box-shadow: 1px 1px 5px #000;
+}
+
+.bg-img-statusCard {
+  background-image: url('../img/chart.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 213px;
+  padding: 0px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #000;
+}
+
+.bg-color-statusCard {
+  background-image: linear-gradient(to right, #7b24ebba, #ab22dab5, #ca2fcac7, #df44bdc7, #ed5bb3c2);
+  width: 100%;
+  height: 213px;
+  border-radius: 5px;
+}
+
+.bg-color-statusCard p {
+  text-align: left;
+  color: #fff;
+  padding-top: 12%;
+  padding-left: 20px;
+  font-size: 21pt;
+}
+
+.bg-color-statusCard span {
+  text-align: left;
+  color: #fff;
+  padding-top: 10px;
+  padding-left: 32%;
+  font-size: 25pt;
+}
+
+.pie-chart {
+  position: absolute;
+  width: 85px;
+  right: 25px;
+  top: 45px;
+  opacity: 0.65;
+  transition: all 350ms;
+}
+
+.bg-color-statusCard:hover .pie-chart {
+  opacity: 1;
+  transform: rotate(360deg) scale(1.2);
+}
+
+.bg-img-statusCard-2 {
+  background-image: url('../img/pc\ and\ codde\ .jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 213px;
+  padding: 0px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #000;
+}
+
+.pie {
+  position: absolute;
+  width: 85px;
+  right: 25px;
+  top: 45px;
+  opacity: 0.65;
+  transition: all 800ms;
+}
+
+.bg-color-statusCard:hover .pie {
+  opacity: 1;
+  transform: scale(1.4);
+  right: 30px;
+
+}
+
+.bg-img-statusCard-3 {
+  background-image: url('../img/shop.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 213px;
+  padding: 0px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #000;
+}
+
+.cart {
+  position: absolute;
+  width: 85px;
+  right: 25px;
+  top: 45px;
+  opacity: 0.65;
+  transition: all 800ms;
+}
+
+.bg-color-statusCard:hover .cart {
+  opacity: 1;
+  transform: scaleX(-1) scale(1.02);
+  right: 20px;
 }
